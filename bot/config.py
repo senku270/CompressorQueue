@@ -23,11 +23,11 @@ try:
     OWNER = config("OWNER", "5385471287")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -preset slower -c:v libx265 -s 854x480 -c:a libopus -ab 35k -pix_fmt=yuv420p10le -colorspace bt2020nc -color_trc smpte2084 -color_primaries bt2020 -profile:v main10 -vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=@Nikhil_Sequeira" "{}" -y',
+        default='ffmpeg -i "{}" -preset slower -c:v libx265 -s 854x480 -c:a libopus -ab 35k -colorspace bt2020nc -color_trc smpte2084 -color_primaries bt2020 -profile:v main10 -vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=@Nikhil_Sequeira" "{}" -y',
     )
     TELEGRAPH_API = config("TELEGRAPH_API", default="https://api.telegra.ph")
     THUMB = config(
-        "THUMBNAIL", default="https://graph.org/file/75ee20ec8d8c8bba84f02.jpg"
+        "THUMBNAIL", default="https://graph.org/file/75ee20ec8d8c8bba84f2.jpg"
     )
 except Exception as e:
     print("Environment vars Missing")
