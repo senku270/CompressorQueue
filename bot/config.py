@@ -23,16 +23,7 @@ try:
     OWNER = config("OWNER", "5385471287")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -preset slower -tune animation -crf 20 -c:v libx265 -pix_fmt yuv420p12le -x265-params
-"profile=main12:\
-aq-mode=3:\
-psy-rd=2.0:\
-psy-rdoq=2.0:\
-no-sao=1:\
-deblock=-1,-1:\
-hdr-opt=1:\
-repeat-headers=1" \ -s 1920x1080
--vf "zscale=rin=limited:r=full,format=gbrpf32le,zimg=param1=1.2:param2=0.95:param3=1.1,zscale=r=limited:rin=full" -colorspace bt2020nc -color_trc smpte2084 -color_primaries bt2020 -master-display "G(13250,34500)B(7500,3000)R(34000,16000)WP(15635,16450)L(10000000,1)" -max-cll "1000,400" -c:a libopus -b:a 32k -vbr on -compression_level 10 -ac 2 -vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=@Nikhil_Sequeira" "{}" -y',
+        default='ffmpeg -i "{}" -preset slower -tune animation -crf 20 -c:v libx265 -pix_fmt yuv420p12le -x265-params "profile=main12: aq-mode=3: psy-rd=2.0: psy-rdoq=2.0: no-sao=1: deblock=-1,-1: hdr-opt=1: repeat-headers=1" -s 1920x1080 -vf "zscale=rin=limited:r=full,format=gbrpf32le,zimg=param1=1.2:param2=0.95:param3=1.1,zscale=r=limited:rin=full" -colorspace bt2020nc -color_trc smpte2084 -color_primaries bt2020 -master-display "G(13250,34500)B(7500,3000)R(34000,16000)WP(15635,16450)L(10000000,1)" -max-cll "1000,400" -c:a libopus -b:a 32k -vbr on -compression_level 10 -ac 2 -vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=@Nikhil_Sequeira" "{}" -y',
     )
     TELEGRAPH_API = config("TELEGRAPH_API", default="https://api.telegra.ph")
     THUMB = config(
