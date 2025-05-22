@@ -24,7 +24,7 @@ try:
     FFMPEG = config("FFMPEG",'ffmpeg -i "{}" -preset veryfast -crf 27 -tune animation -c:v libx265 -s 854x480 -c:a libopus -b:a 32k -vbr on -compression_level 10 -ac 2  -vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=@DenjiXD17" "{}"')
     TELEGRAPH_API = config("TELEGRAPH_API", default="https://api.telegra.ph")
     THUMB = config(
-        "THUMBNAIL", default="https://graph.org/file/75ee20ec8d8c8bba84f02.jpg"
+        "THUMBNAIL", default="https://graph.org/file/75ee20ec8d8c8bba84f02"
     )
 except Exception as e:
     print("Environment vars Missing")
