@@ -18,7 +18,7 @@ from decouple import config
 try:
     APP_ID = config("APP_ID", "4018758")
     API_HASH = config("API_HASH", "622bba3cf046315531f71f9d97fa6c2a")
-    BOT_TOKEN = config("BOT_TOKEN", "6942815361:AAHwpmE7ThoaKWJJyRIrIZHRXOaxooCXGd8")
+    BOT_TOKEN = config("BOT_TOKEN", "6942815361:AAFpkbnXf9VI4D4Q-gPRXyCCwdKw9OwGUxk")
     DEV = 5385471287
     OWNER = config("OWNER", "5385471287")
     FFMPEG = config("FFMPEG",'ffmpeg -i "{}" -preset fast -crf 26 -tune animation -c:v libx265 -pix_fmt yuv420p -s 1280x720 -x265-params "info=0" -color_primaries bt2020 -color_trc bt709 -colorspace bt2020nc -c:a libopus -b:a 24k -vbr on -compression_level 8 -ac 2 -vf "format=yuv420p,scale=1920:1080:flags=lanczos" -threads 4 "{}" -y')
