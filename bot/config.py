@@ -21,7 +21,7 @@ try:
     BOT_TOKEN = config("BOT_TOKEN", "6778992913:AAGKtoktjnXZI9adTcBjTMD1uhrNie9mDCs")
     DEV = 5385471287
     OWNER = config("OWNER", "5385471287")
-    FFMPEG = config("FFMPEG",'ffmpeg -i "{}" -preset slower -crf 26 -tune animation -c:v libx265 -s 1280x720 -colorspace bt2020nc -color_trc smpte2084 -color_primaries bt2020 -c:a libopus -b:a 32k -vbr on -compression_level 10 -ac 2  -vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=@DenjiXD17" "{}"')
+    FFMPEG = config("FFMPEG",'ffmpeg -i "{}" -preset veryfast -crf 27 -tune animation -c:v libx265 -s 1280x720 -c:a libopus -b:a 32k -vbr on -compression_level 10 -ac 2  -vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=@DenjiXD17" "{}"')
     TELEGRAPH_API = config("TELEGRAPH_API", default="https://api.telegra.ph")
     THUMB = config(
         "THUMBNAIL", default="https://graph.org/file/75ee20ec8d8c8bba84f02.jpg"
