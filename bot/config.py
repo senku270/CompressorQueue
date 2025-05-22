@@ -23,7 +23,7 @@ try:
     OWNER = config("OWNER", "5385471287")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
+        default='ffmpeg -i "{}" -preset slower -crf 24 -tune animation -c:v libx265 -s 1920x1080 -colorspace bt2020nc -color_trc smpte2084 -color_primaries bt2020 -c:a libopus -b:a 32k -vbr on -compression_level 10 -ac 2 -vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text='Nikhil_Sequeira'" "{}"',
     )
     TELEGRAPH_API = config("TELEGRAPH_API", default="https://api.telegra.ph")
     THUMB = config(
