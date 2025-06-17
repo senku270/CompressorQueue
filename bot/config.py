@@ -18,7 +18,7 @@ from decouple import config
 try:
     APP_ID = config("APP_ID", "4018758")
     API_HASH = config("API_HASH", "622bba3cf046315531f71f9d97fa6c2a")
-    BOT_TOKEN = config("BOT_TOKEN", "6942815361:AAFpkbnXf9VI4D4Q-gPRXyCCwdKw9OwGUxk")
+    BOT_TOKEN = config("BOT_TOKEN", "6778992913:AAFpUEeJo7kfEfDZhxAdhvK9-9s3xqD31DE")
     DEV = 5385471287
     OWNER = config("OWNER", "5385471287")
     FFMPEG = config("FFMPEG", 'ffmpeg -i "{}" -vf "subtitles=subtitles.srt" -map 0:v:0 -map 0:a:0 -map 0:a:1 -c:v hevc_nvenc -preset p7 -tune hq -rc constqp -qp 28 -c:a copy -metadata:s:s:0 title="Subtitles by @Anime_Stein" -metadata:s:v title="Encoded by [Anime Stein] Telegram Channel" -metadata:s:a:0 title="[Telegram: @AnimeStein]" -metadata:s:a:1 title="[Telegram: @Anime_Stein]" -metadata title="Fileinfo - Steins Gate is Goat" -movflags +faststart "{}" -y')
