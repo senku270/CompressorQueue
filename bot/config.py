@@ -21,7 +21,7 @@ try:
     BOT_TOKEN = config("BOT_TOKEN", "6778992913:AAFpUEeJo7kfEfDZhxAdhvK9-9s3xqD31DE")
     DEV = 5385471287
     OWNER = config("OWNER", "5385471287")
-    FFMPEG = config("FFMPEG", 'ffmpeg -i "{}" -vf "subtitles=subtitles.srt" -map 0:v:0 -map 0:a:0 -map 0:a:1 -c:v hevc_nvenc -preset p7 -tune hq -rc constqp -qp 28 -c:a copy -metadata:s:s:0 title="Subtitles by @Anime_Stein" -metadata:s:v title="Encoded by [Anime Stein] Telegram Channel" -metadata:s:a:0 title="[Telegram: @AnimeStein]" -metadata:s:a:1 title="[Telegram: @Anime_Stein]" -metadata title="Fileinfo - Steins Gate is Goat" -movflags +faststart "{}" -y')
+    FFMPEG = config("FFMPEG", 'ffmpeg -i "{}" -vf "subtitles=English.srt" -map 0:v:0 -map 0:a:0 -map 0:a:1 -c:v hevc_nvenc -preset p7 -tune hq -rc constqp -qp 28 -c:a copy -metadata:s:s:0 title="Subtitles by @Anime_Stein" -metadata:s:v title="Encoded by [Anime Stein] Telegram Channel" -metadata:s:a:0 title="[Telegram: @AnimeStein]" -metadata:s:a:1 title="[Telegram: @Anime_Stein]" -metadata title="Fileinfo - Steins Gate is Goat" -movflags +faststart "{}" -y')
     TELEGRAPH_API = config("TELEGRAPH_API", default="https://api.telegra.ph")
     THUMB = config(
         "THUMBNAIL", default="https://graph.org/file/75ee20ec8d8c8bba84f02"
